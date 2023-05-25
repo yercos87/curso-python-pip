@@ -18,7 +18,7 @@ def run():
 
     df = pd.read_csv('world_population.csv')
     #print(df)
-    df = df[df['Continent'] == 'Africa']
+    df = df['Continent'] == 'Africa'
     print(df)
 
     countries = df['Country'].values
