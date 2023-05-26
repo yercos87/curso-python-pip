@@ -1,9 +1,8 @@
 
-#De las 2 a la 4 construye el servicio app-csv
-services:
+services: #De las 1 a la 3 construye el servicio app-csv
   app-csv:
     build: 
-# En el contexto donde se encuentra actualmente /app
-      context: .
-# Hacer lo que esta en Dockerfile
-      dockerfile: Dockerfile
+      context: . # En el contexto donde se encuentra actualmente /app
+      dockerfile: Dockerfile # Hacer lo que esta en Dockerfile
+    volumes: #automatizando la vinculación de archivos
+      - .:/app
