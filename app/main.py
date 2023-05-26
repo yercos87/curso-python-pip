@@ -17,9 +17,10 @@ def run():
     """
 
     df = pd.read_csv('world_population.csv')
+    print(df) 
+    #print(df['Continent'])
+    df = df[df['Continent'] == 'Africa']
     #print(df)
-    df = df['Continent'] == 'Africa'
-    print(df)
 
     countries = df['Country'].values
     percentages = df['World Population Percentage'].values

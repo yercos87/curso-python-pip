@@ -4,6 +4,8 @@
 ## .PNG ##
 *.png
 
+## .csv ##
+*.csv
 
 ### Linux ###
 *~
